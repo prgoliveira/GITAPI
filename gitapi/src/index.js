@@ -4,6 +4,6 @@ import './index.css';
 import App from './main/App.jsx';
 
 ReactDOM.render(
-  <App title='Api de usuário Github' />,
+  <App />,
   document.getElementById('root')
 )

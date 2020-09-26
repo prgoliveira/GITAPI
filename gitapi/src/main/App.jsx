@@ -1,12 +1,10 @@
 import React from 'react'
-
-import Routes from './Routes'
-
+import Home from '../Home'
 
 export default props => {
     return (
         <>
-            <Routes />
+            <Home />
         </>
     )
 }
