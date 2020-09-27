@@ -2,7 +2,8 @@ import styled from 'styled-components'
 
 
 export const TitlePage = styled.h1`
-font-size: 200%;
+font-size: 2em;
+align-self: center;
 padding: 0 1.5rem;
 `
 export const TitleRepo = styled.h2`

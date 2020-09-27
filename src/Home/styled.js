@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Header = styled.nav`
     display: flex;
-    width: 100%;
     justify-content: space-between;
     height: auto;
     align-items: flex-start;
@@ -32,7 +31,6 @@ export const InputItens = styled.ul`
 `
 
 export const HomeContainer = styled.main`
-    
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
@@ -43,13 +41,16 @@ export const HomeContainer = styled.main`
 `
 
 export const UserContent = styled.div`
-    width: 100vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;    
+    &{@media screen and (max-width: 600px){
+        flex-wrap: wrap;
+        height: auto;
+    }
+}
 `
 export const UserInfo = styled.div`
-    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,14 +59,15 @@ export const UserInfo = styled.div`
 `
 
 export const RepoContent = styled.div`
-    width: 100vw;
+    width: auto;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    border: 1px solid #ddd;flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 1px solid #ddd;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-self: stretch;
 `
 export const RepoInfo = styled.div`
-    width: 100vw;    
     justify-content: center;
     margin:  auto 1.5rem;
 `

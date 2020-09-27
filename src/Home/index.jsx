@@ -11,14 +11,13 @@ import Info from '../components/Info'
 
 export default props => {
 
-    const [usuario, setUsuario] = useState('octocat')
     const [repository, setRepository] = useState([])
-    const [usuarioInfo, setUsuarioInfo] = useState('octocat')
+    const [usuarioInfo, setUsuarioInfo] = useState('')
     const [erro, setErro] = useState(false)
 
     function handlePesquisa() {
-        let gitUsuario = `https://api.github.com/users/${usuario}`
-        let gitRepositorio = `https://api.github.com/users/${usuario}/repos`
+        let gitUsuario = `https://api.github.com/users/${usuarioInfo}`
+        let gitRepositorio = `https://api.github.com/users/${usuarioInfo}/repos`
 
         const requestOne = axios.get(gitUsuario)
         const requestTwo = axios.get(gitRepositorio)
@@ -48,12 +47,11 @@ export default props => {
                 <TitlePage />
                 <S.InputItens>
                     {erro ? <S.ErroMsg>Ocorreu um erro, tente novamente</S.ErroMsg> : ''}
-                    <S.Input className='usuarioInput' type="text" placeholder='Usuario' value={usuario} onChange={e => setUsuario(e.target.value)} />
+                    <S.Input className='usuarioInput' type="text" placeholder='Usuario' value={usuarioInfo.login} onChange={e => setUsuarioInfo(e.target.value)} />
                     <S.Button type='button' onClick={handlePesquisa}>Pesquisar Usuario</S.Button >
                 </S.InputItens>
             </S.Header>
             <S.HomeContainer>
-
                 <S.UserContent>
                     <Avatar avatar_url={usuarioInfo.avatar_url} />
                     <S.UserInfo>
