@@ -1,5 +1,5 @@
 import React from 'react'
 
-import * as S from './styled'
+import {TitlePage} from './styled'
 
-export default props => <S.TitlePage>Github Users API</S.TitlePage>
+export default props => <TitlePage>Github Users API</TitlePage>
