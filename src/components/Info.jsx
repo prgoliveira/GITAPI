@@ -1,10 +1,10 @@
 import React from 'react'
 
-import * as S from './styled'
+import {Info} from './styled'
 
 
 export default props =>{
     const {label, info} = props 
 
-    return <S.Info>{label || 'Aguardando informações'}: {info || 'Nada informado' }</S.Info>
+    return <Info><b>{label || 'Aguardando informações'}: </b>{info || 'Nada informado' }</Info>
 } 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +67,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+=======
+# GITAPI
+### Api que busca usuário no github e seus repositórios, criado utilizando React e estilizado com Styled-Components
+
+Projeto que busca um usuario no Git e mostra os seus repositorios de forma que clicando em cima do repositorio desejado, ele sera aberto em uma nova aba.
+Essa é a versão 1.0 do projeto, para treinamento dos conceitos aprendidos com React e Styled-Components, em uma versão futura colocarei a função de trocar as cores do tema 
+
+![Preview da versão 1.0](https://github.com/prgoliveira/GITAPI/blob/master/gitapi1.0.png?raw=true)
+>>>>>>> b58cf8427ce027c3a1613d4ad3342d267fe15453
