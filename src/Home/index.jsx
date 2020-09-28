@@ -71,6 +71,9 @@ export default props => {
                 </S.Header>
 
                 <S.HomeContainer>
+
+                  
+                  
                     <S.UserContent>
                         <Avatar avatar_url={usuarioInfo.avatar_url} />
                         <S.UserInfo>
@@ -81,10 +84,16 @@ export default props => {
                             <Info label="Bio" info={usuarioInfo.bio} />
                         </S.UserInfo>
                     </S.UserContent>
+
+                    
+
                     <TitleRepo repositories={usuarioInfo.public_repos} />
                     <S.RepoContent>
                         {listaRepositorios}
                     </S.RepoContent>
+
+                    
+
                 </S.HomeContainer>
             </div>
         </ThemeProvider>
